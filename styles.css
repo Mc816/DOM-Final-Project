@@ -1,0 +1,59 @@
+body{
+    background-color: aqua;
+    /*flex-direction: center;*/
+    display: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.img1 {
+    display: none;
+
+}
+
+.img2 {
+    
+    display: none;
+
+}
+
+.image3{
+    display: none;
+
+}
+
+.image4{
+    display: none;
+
+}
+
+.image5{
+    display: none;
+}
+
+.image6{
+    display: none;
+}
+
+.image7{
+    display: none;
+}
+
+.image8{
+    display: none;
+}
+
+.image9{
+    display: none;
+}
+
+.image10{
+    display: none;
+}
+.image11{
+    display: none;
+}
+
+.image12{
+    display: none;
+}
