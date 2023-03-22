@@ -1,16 +1,19 @@
+*{
+    text-align: center;
+}
 body{
     background-color: aqua;
-    /*flex-direction: center;*/
-    display: wrap;
-    align-items: center;
+    /*display: flex;*/
+    align-items: column;
     justify-content: center;
 
 }
-.img1 {
+
+.none {
     display: none;
 
 }
-
+/*
 .img2 {
     
     display: none;
@@ -57,3 +60,4 @@ body{
 .image12{
     display: none;
 }
+*/
