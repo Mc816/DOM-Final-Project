@@ -2,62 +2,62 @@
     text-align: center;
 }
 body{
-    background-color: aqua;
+    background-color: black;
     /*display: flex;*/
-    align-items: column;
+    /*align-items: column;*/
+    flex-direction: row;
     justify-content: center;
 
 }
 
+.div{
+    background-color: blueviolet;
+    flex: 1;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    
+}
+
+.button1{
+    align-items: flex-end;
+}
 .none {
     display: none;
-
 }
+
+
 /*
-.img2 {
-    
-    display: none;
-
-}
-
-.image3{
-    display: none;
-
-}
-
-.image4{
-    display: none;
-
-}
-
-.image5{
+.popupbttn1{
     display: none;
 }
-
-.image6{
-    display: none;
-}
-
-.image7{
-    display: none;
-}
-
-.image8{
-    display: none;
-}
-
-.image9{
-    display: none;
-}
-
-.image10{
-    display: none;
-}
-.image11{
-    display: none;
-}
-
-.image12{
-    display: none;
+*//*
+#link{
+    display: none; /* currently displaying none bc I am trying to hide it and show it again*/
+/*}
+*/
+/*
+.p2{
+    display: none ;
 }
 */
+.disable{
+    display: none;
+}
+
+
+
+#img1{
+    width: 500px;
+    
+}
+
+.gone {
+    display: none;
+}
+
+.gone2{
+    display: none;
+}
