@@ -1,23 +1,25 @@
-console.log(window.location.href);
+//console.log(window.location.href);
 
 class BabyYoda {
-  constructor(happines, tiredness) {
+  constructor(name, happines, tiredness) {
+    this.name = name;
     this.happines = happines;
     this.tiredness = tiredness;
   }
 }
 
 class Doggie {
-  constructor(happy, sleepy, hungry) {
+  constructor(name, happy, scared, hungry) {
+    this.name = name;
     this.happy = happy;
-    this.sleepy = sleepy;
+    this.scared = scared;
     this.hungry = hungry;
   }
 }
 
-const babaYoda = new BabyYoda("happy", "tired");
-console.log(babaYoda.happines);
-const pullto = new Doggie("Sad", "mad", 6);
+const babaYoda = new BabyYoda("Baby Yoda", "happy", "tired");
+
+const pullto = new Doggie("Pulto", "happy", "scared", "full");
 
 //put if else statments based on the button clicked
 
@@ -36,12 +38,15 @@ const link = document.getElementById("popupbttn");
 const linkBttn = document.querySelector("#nextbtn");
 //const clicked = true;
 const text = {
-  "/pages/page1.html": `Baby Yoda is Super ${babaYoda.happines}`,
-  "/pages/page4.html": `This is page 4${babaYoda.happines}`,
+  "/pages/page1.html": `Baby Yoda is super ${babaYoda.happines}`,
+  "/pages/page4.html": `You made ${pullto.name} so ${babaYoda.happines}`,
+  "/pages/page8.html": `Wow that made ${babaYoda.name} so ${babaYoda.tiredness}`,
 };
 
 const text2 = {
-  "/pages/page1.html": `baby yoda`,
+  "/pages/page1.html": `${babaYoda.name} had so much fun on Space Mountain`,
+  "/pages/page7.html": `${pullto.name} is ${pullto.hungry}`,
+  "/pages/page5.html": `That ride made ${pullto.name} ${pullto.scared}`,
 };
 imgButton1.addEventListener("click", () => {
   let url = window.location.pathname;
@@ -50,8 +55,10 @@ imgButton1.addEventListener("click", () => {
 
   if (linkBttn2 === null) {
     //make sure there are no other classes in the class nsme
+    //If there is no second button run these
     linkBttn.className = "";
   } else {
+    //If there is a second button do these
     linkBttn2.className = "disable";
     linkBttn.className = "";
   }
@@ -60,10 +67,12 @@ imgButton1.addEventListener("click", () => {
   //imgButton1.classList.toggle("noBttn");
   pTag.textContent = text[url];
   pTag.className = "";
+  pTag.style.color = "lightgreen";
+  pTag.style.fontSize = "55px";
+  pTag.style.fontWeight = "bold";
 });
 
 const imgButton2 = document.getElementById("button2");
-const pTag3 = document.querySelector(".gone2");
 const myImage2 = document.getElementById("img2");
 const linkBttn2 = document.querySelector("#nextbtn2");
 imgButton2.addEventListener("click", () => {
@@ -81,9 +90,15 @@ imgButton2.addEventListener("click", () => {
     linkBttn2.className = "";
   }
 
-  pTag3.textContent = `Baby Yoda is Super ${babaYoda.tiredness} he is ready to go to bed`; //class for baby yoda going to be
-  pTag3.classList.toggle("gone2");
+  pTag.textContent = text2[url];
+  pTag.className = "";
+  pTag.style.color = "lightblue";
+  pTag.style.fontSize = "40px";
+  pTag.style.fontSize = "bold";
 });
+
+//pTag3.textContent = `Baby Yoda is Super ${babaYoda.tiredness} he is ready to go to bed`; //class for baby yoda going to be
+//pTag3.classList.toggle("gone2");
 /*
 imgButton1.addEventListener("Click");
 

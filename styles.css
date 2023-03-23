@@ -1,15 +1,86 @@
 *{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-image:url('SinfulFormalFishingcat-max-1mb.gif'); 
+    background-repeat:repeat; 
+} 
+
+
+.none {
+    display: none;
+
+}
+
+
+.disable{
+    display: none;
+}
+
+
+
+.container{
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: auto;
+}
+
+
+
+#img1{
+    width:  400px;
+    height: 400px;
+    background-size: cover;
+    border: solid 25px green;  
+
+}
+
+#img2{
+    
+    width:  400px;
+    height: 400px;
+    background-size: cover;
+    border: solid 25px green;
+
+}
+h1{
+    flex: 3 0px;
+    color: rgba(7, 192, 32, 0.466);
+    flex: space-between;
+}
+
+
+
+
+/*
+.gone {
+    display: none;
+}
+
+.gone2{
+    display: none;
+}
+
+/*{
     text-align: center;
 }
+
 body{
-    background-color: black;
+    background-image: url('walt-disney.gif');
     /*display: flex;*/
     /*align-items: column;*/
-    flex-direction: row;
-    justify-content: center;
-
+    /*flex-direction: row;
+    justify-content: center;*/
+/*
 }
+*/
 
+/*
 .div{
     background-color: blueviolet;
     flex: 1;
@@ -20,44 +91,76 @@ body{
     height: 500px;
     
 }
-
+*/
+/*
 .button1{
     align-items: flex-end;
 }
-.none {
-    display: none;
-}
+*/
 
 
+
+/* Touch only the bottom*/
+/******/
 /*
-.popupbttn1{
-    display: none;
+#divimg{
+    height: 50vh;
+    width: auto;
+
 }
-*//*
-#link{
-    display: none; /* currently displaying none bc I am trying to hide it and show it again*/
-/*}
 */
 /*
-.p2{
-    display: none ;
-}
-*/
-.disable{
-    display: none;
-}
-
-
-
 #img1{
-    width: 500px;
+    order: 1;
+    /*
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(maxresdefault.jpg)20px round;
+    height: 50vh ;
+    width: auto;*/
+ /*   
+}
+*/
+/*
+#img2{
+    order: 1;
+    
+}
+*/
+
+/*
+#button1{
+    order: 2;
+    flex-direction: start;
+    flex: center;
+    width: 100px
+}
+
+#button2{
+    order: 2;
+    flex-direction: start;
+    flex: center;
+    width: 100px;
     
 }
 
-.gone {
-    display: none;
+#nextbttn{
+
 }
 
-.gone2{
-    display: none;
+.p2{
+
+}
+/*
+.div1{
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: column;
+    
+    height: 40px;
+    width: auto;*/
+   /*flex: center;
+   border: 20px solid rgba(14, 216, 102, 0.273);
+   align-items: center;
+   /*flex-direction: column-reverse;*//*
 }
